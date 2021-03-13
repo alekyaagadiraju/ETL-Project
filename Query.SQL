@@ -1,21 +1,21 @@
 
 CREATE TABLE  "new_Future"(new int,
-  Restaurant VARCHAR,
-	YOY_Sales int,
- 	Sales  bigint ,
- 	YOY_Units int,
-  Franchising Varchar,
-  City Varchar,
-  State Varchar
+   Restaurant VARCHAR,
+	 YOY_Sales int,
+ 	 Sales  bigint ,
+ 	 YOY_Units int,
+   Franchising Varchar,
+   City Varchar,
+   State Varchar
 );
 select * from "new_Future";
 
 CREATE TABLE new_Top250(new int,
-  Restaurant VARCHAR,
-	YOY_Sales int, 	
-  Sales  bigint ,
-	YOY_Units int,
-  Segment Varchar
+   Restaurant VARCHAR,
+	 YOY_Sales int, 	
+   Sales  bigint ,
+	 YOY_Units int,
+   Segment Varchar
 );
 SELECT * FROM "new_Top250";
 
