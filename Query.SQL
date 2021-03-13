@@ -1,29 +1,29 @@
 
--- Create Table
-
-create table rank_Top250(
+CREATE TABLE  "new_Future"(new int,
   Restaurant VARCHAR,
-  YOY_Sales int,
-  Sales bigint ,
-  YOY_Units int
+	YOY_Sales int,
+ 	Sales  bigint ,
+ 	YOY_Units int,
+  Franchising Varchar,
+  City Varchar,
+  State Varchar
 );
-   
-select * from rank_Top250
+select * from "new_Future";
 
-create table rank_Future(
+CREATE TABLE new_Top250(new int,
   Restaurant VARCHAR,
-  YOY_Sales int,
-  Sales bigint ,
-  YOY_Units int
+	YOY_Sales int, 	
+  Sales  bigint ,
+	YOY_Units int,
+  Segment Varchar
 );
-   
-select * from rank_Future
+SELECT * FROM "new_Top250";
 
 -- Join Statement
-SELECT "rank_Future"."Restaurant", "rank_Future"."YOY_Sales", "rank_Future"."Sales", "rank_Future"."YOY_Units", "rank_Top250"."Restaurant", "rank_Top250"."YOY_Sales", "rank_Top250"."Sales", "rank_Top250"."YOY_Units"
-FROM "rank_Future"
-JOIN "rank_Top250"
-ON "rank_Future"."Rank"= "rank_Top250"."Rank";
+SELECT "new_Future"."Restaurant","new_Future"."YOY_Sales","new_Future"."Sales",new_Future"."YOY_Units","new_Top250"."Restaurant","new_Top250"."YOY_Sales","new_Top250"."Sales","new_Top250"."YOY_Units"
+FROM "new_Future"
+JOIN new_Top250"
+ON new_Future"new"=new_Top250"new";
 
 -- Altering Data Types
 ALTER TABLE "new_Future"
